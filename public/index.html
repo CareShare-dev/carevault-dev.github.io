@@ -43,71 +43,100 @@
 		<link rel="stylesheet" href="./global.css" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	</head>
-	<body class="p-0 bg-gradient-to-b dark-gradient w-full h-full">
+	<body class="w-full h-full p-0 bg-gradient-to-b dark-gradient">
 		<main>
 			<!-- Insert your custom landing page content here -->
 			<!-- Navbar -->
 
 			<nav class="p-4">
-				<div class="container mx-auto flex items-center justify-between">
-					<div class="text-white font-bold text-xl">Logo</div>
+				<div class="container flex items-center justify-between mx-auto">
+					<div class="text-xl font-bold text-white">
+						<a href="/">
+							<img
+								src="/images/care-vault-logo.png"
+								alt="Care Vault Logo"
+								class="w-8 h-8"
+							/>
+						</a>
+					</div>
 					<div class="flex space-x-4">
-						<button class="text-white px-4 py-2 rounded-md">Motivations</button>
-						<button class="text-white px-4 py-2 rounded-md">
-							Join Waitlist
-						</button>
-						<button class="text-white px-4 py-2 rounded-md">Docs</button>
+						<a class="px-4 py-2 text-white rounded-md">Motivations</a>
+						<a class="px-4 py-2 text-white rounded-md"> Join Wait List </a>
+						<a class="px-4 py-2 text-white rounded-md">Docs</a>
 					</div>
 				</div>
 			</nav>
-
-			<!-- Content Section -->
-
-			<!-- Your content here -->
-
+			<div id="waitlist-wrapper" class="hidden">
+				<div id="waitlist-modal" class="modal">
+					<div class="modal-content">
+						<button id="close-waitlist-modal" class="text-gray-300 close">
+							&times; Close
+						</button>
+						<h4 class="my-5 section-title">Be the first to know</h4>
+						<form action="" class="flex flex-col gap-3">
+							<label for="email" class="text-white">Email</label>
+							<input
+								type="text"
+								placeholder="Email"
+								name="email"
+								id="email"
+								class="px-4 py-2 text-white bg-transparent border border-pink-300 rounded-md"
+							/>
+							<button class="pink-button">Sign Me Up!</button>
+						</form>
+					</div>
+				</div>
+			</div>
 			<section
-				class="container mx-auto align-center justify-center pt-8 flex h-full min-h-screen"
+				class="container flex flex-wrap max-w-6xl gap-8 p-8 mx-auto h-min-screen first-line:justify-center sm:flex-col sm:flex-nowrap md:flex-row"
 			>
-				<div
-					class="w-1/2 h-full flex-col align-center justify-center border-red-500"
-				>
-					<div class="p-8 border border-red-500">
-						<h1 class="text-4xl font-bold mb-4 text-white">
-							Collect, Own, and Monetize your health data
+				<div class="flex flex-col justify-center w-1/2 h-full align sm:w-full">
+					<div class="p-8">
+						<h1 class="text-5xl font-bold text-white">
+							Collect, Own, and Monetize
 						</h1>
-						<p class="text-lg mb-8 text-white">
+						<h2 class="mb-4 text-5xl text-gray-300">your health data</h2>
+						<p class="mb-8 text-lg text-white">
 							Unlock your earning potential, break down barriers, & get rewarded
 							for living healthy.
 						</p>
 						<button class="flex items-center mb-4">
 							<svg
-								class="pink-play-icon-text h-6 w-6 mr-2"
+								class="w-6 h-6 mr-2 play-icon-text"
 								viewBox="0 0 24 24"
 								fill="currentColor"
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path d="M3 22V2L21 12L3 22Z" />
 							</svg>
-							<span class="pink-play-icon-text">Watch Demo</span>
+							<span class="play-icon-text">Watch Demo</span>
 						</button>
-						<button class="pink-button">Join Wait List</button>
-						<button class="pink-outline-button">Read the Docs</button>
+						<button id="waitlist-modal-button" class="pink-button">
+							Join Wait List
+						</button>
+						<a href="">
+							<button class="pink-outline-button">Read the Docs</button>
+						</a>
+						<!-- todo: replace with git books link -->
 					</div>
 				</div>
 
-				<div class="w-1/2">
-					<img src="path/to/your/image.jpg" alt="Image" class="w-full h-auto" />
+				<div
+					class="flex flex-col justify-start w-full h-full align-middle md:w-1/2 md:justify-center"
+				>
+					<img
+						src="/images/landing_image.png"
+						alt="Image"
+						class="w-full h-auto max-w-lg"
+					/>
 				</div>
-			</section>
-			<section class="container mx-auto pt-8 flex h-screen min-h-screen">
-				<h2 class="text-white">Hello</h2>
 			</section>
 		</main>
 
+		<script src="main.js"></script>
 		<!-- Add necessary JavaScript libraries or custom scripts here -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<script src="scripts/main.js"></script>
 	</body>
 </html>

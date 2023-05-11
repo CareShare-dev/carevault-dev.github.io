@@ -3,13 +3,9 @@ body {
 	height: 100vh;
 	position: absolute;
 	width: 100vw;
-}
-html {
-	overflow: scroll;
-}
-body: {
 	overflow: hidden;
 }
+
 main {
 	height: 100vh;
 	overflow: scroll;
