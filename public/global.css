@@ -9,4 +9,32 @@ body {
 main {
 	height: 100vh;
 	overflow: scroll;
+	overflow-x: hidden;
+}
+/* For Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-corner {
+	background: #232323;
+}
+::-webkit-horizontal-scrollbar {
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #232323;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* For Internet Explorer and Edge */
+body {
+	scrollbar-face-color: #888;
+	scrollbar-track-color: #232323;
 }
