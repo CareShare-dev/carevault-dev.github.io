@@ -1,0 +1,37 @@
+{
+	"name": "carevault-dev.github.io",
+	"version": "1.0.0",
+	"description": "Landing Page for CareVault",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css",
+		"watch": "npm-watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CareShare-dev/carevault-dev.github.io.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/CareShare-dev/carevault-dev.github.io/issues"
+	},
+	"homepage": "https://github.com/CareShare-dev/carevault-dev.github.io#readme",
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"npm-watch": "^0.11.0",
+		"postcss": "^8.4.23",
+		"tailwindcss": "^3.3.2"
+	},
+	"watch": {
+		"build": {
+			"patterns": [
+				"src",
+				"tailwind.config.js"
+			],
+			"extensions": "css,js"
+		}
+	}
+}
