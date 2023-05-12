@@ -5,10 +5,22 @@
 	background-image: linear-gradient(to bottom, darkslateblue, midnightblue);
 	background-repeat: no-repeat;
 }
+/* nav link */
+.nav-link {
+	@apply text-gray-200 bg-transparent px-3 py-1 border border-transparent rounded-md transition-all duration-300 ease-in-out cursor-pointer;
+}
+
+.nav-link:hover {
+	@apply text-white border border-blue-600;
+}
+
+.nav-link:active {
+	@apply text-white bg-blue-700 border border-blue-600;
+}
 
 /* Pink button with white text */
 .pink-button {
-	@apply bg-pink-500 text-white font-semibold py-2 px-4 rounded;
+	@apply bg-pink-500 text-white font-semibold py-2 my-1 px-4 rounded;
 }
 
 .pink-button:hover {
@@ -17,7 +29,7 @@
 
 /* Pink outlined button with white text */
 .pink-outline-button {
-	@apply border border-pink-500 text-pink-500 font-semibold py-2 px-4 rounded;
+	@apply border border-pink-500 text-pink-500 font-semibold py-2 px-4 rounded my-1;
 }
 
 .pink-outline-button:hover {
@@ -47,5 +59,8 @@
     justify-center bg-gray-800 bg-opacity-50;
 }
 .modal-content {
-	@apply bg-blue-950 p-6 rounded shadow-lg max-w-lg;
+	@apply bg-blue-950 p-6 rounded shadow-lg w-11/12 md:w-4/6 max-w-3xl;
+}
+.outlined-input {
+	@apply px-4 py-2 text-white bg-transparent border border-pink-300 rounded-md;
 }
