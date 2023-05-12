@@ -5,12 +5,10 @@ body {
 	width: 100vw;
 	overflow: hidden;
 }
-
-main {
-	height: 100vh;
-	overflow: scroll;
-	overflow-x: hidden;
+* {
+	box-sizing: border-box;
 }
+
 /* For Chrome, Safari, and Opera */
 ::-webkit-scrollbar {
 	width: 5px;
@@ -37,4 +35,31 @@ main {
 body {
 	scrollbar-face-color: #888;
 	scrollbar-track-color: #232323;
+}
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	background-image: url("");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	z-index: -1;
+}
+main {
+	/* height: 100vh; */
+	overflow: auto;
+	overflow-x: hidden;
+}
+nav,
+section {
+	z-index: 2;
+}
+#titleable-image-wrapper {
+	perspective: 1000px;
+}
+#tiltable-image {
+	transform-style: preserve-3d;
+	transition: transform 0.2s;
 }
