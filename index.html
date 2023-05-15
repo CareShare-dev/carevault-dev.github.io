@@ -22,7 +22,7 @@
 		/>
 		<meta property="og:image" content="/images/care-vault-logo.png" />
 		<meta property="og:url" content="https://carevault.health" />
-		<meta name="twitter:card" content="/images/summary_large_image" />
+		<meta name="twitter:card" content="/images/twitter_card" />
 		<meta
 			name="twitter:title"
 			content="Care Vault: Decentralized Health Records Protocol"
@@ -33,7 +33,7 @@
 		/>
 		<meta
 			name="twitter:image"
-			content="https://carevault.example.com/images/care-vault-logo.png"
+			content="https://carevault.example.com/images/twitter_card.png"
 		/>
 
 		<title>Care Vault: Decentralized Health Records Protocol</title>
@@ -50,21 +50,17 @@
 	</head>
 	<body class="w-full h-full p-0 bg-gradient-to-b dark-gradient">
 		<main>
-			<div id="particles-js"></div>
-			<!-- Insert your custom landing page content here -->
-			<!-- Navbar -->
-
-			<nav class="fixed w-screen p-4 l-0 r-0 t-0">
+			<nav class="fixed w-screen p-4 bg-gray-900 l-0 r-0 t-0">
 				<div class="flex flex-row justify-center mx-auto">
 					<div
-						class="container flex items-center justify-between w-screen px-6"
+						class="container flex items-center justify-between w-screen px-2 md:px-6"
 					>
 						<div class="mr-auto text-xl font-bold text-white">
 							<a href="/">
 								<img
 									src="/images/care-vault-logo.png"
 									alt="Care Vault Logo"
-									class="w-8 h-8 md:w-10 md:h-10"
+									class="w-6 h-6 md:w-8 md:h-8"
 								/>
 							</a>
 						</div>
@@ -73,7 +69,11 @@
 							<button id="nav-waitlist-btn" class="nav-link">
 								Join Wait List
 							</button>
-							<a href="https://docs.carevault.health/" class="nav-link">Docs</a>
+							<a
+								href="https://docs.carevault.health/"
+								class="nav-link-highlight"
+								>Read Docs</a
+							>
 						</div>
 					</div>
 				</div>
@@ -145,7 +145,7 @@
 								href="https://youtu.be/yeYfQcewlyU"
 								target="_blank"
 								rel="noopener"
-								class="flex items-center p-1 mb-4 w-max"
+								class="flex items-center pt-2 mb-4 border-b-2 w-max border-b-transparent hover:border-b-pink-300"
 							>
 								<span
 									class="flex items-center justify-center w-10 h-10 mr-3 border border-blue-300 rounded-full"
@@ -160,7 +160,7 @@
 									</svg>
 								</span>
 
-								<span class="text-lg play-icon-text">Watch Demo</span>
+								<span class="text-xl play-icon-text">Watch Demo</span>
 							</a>
 
 							<button id="waitlist-modal-button" class="pink-button">
