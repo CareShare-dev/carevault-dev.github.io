@@ -118,7 +118,7 @@
 			</div>
 
 			<section
-				class="flex flex-col justify-center h-screen min-h-screen p-4 align-middle max-w-8xl"
+				class="flex flex-col justify-center h-screen min-h-screen align-middle md:p-4 max-w-8xl"
 			>
 				<div
 					class="container flex flex-col min-h-screen px-6 mx-auto md:flex-nowrap md:flex-row"
@@ -127,16 +127,18 @@
 						class="flex flex-col justify-center w-full h-full gap-2 pt-20 md:pt-14 md:w-7/12 sm:w-full"
 					>
 						<div>
-							<h1 class="text-4xl font-bold text-white md:text-6xl">
+							<h1
+								class="mt-16 text-4xl font-bold text-white font-title md:text-6xl md:mt-2"
+							>
 								Collect, Own, and Monetize
 							</h1>
 							<h2
-								class="mt-3 mb-4 text-4xl font-light text-gray-300 md:text-5xl"
+								class="mt-3 mb-4 text-4xl font-light text-textSecondary font-title md:text-5xl"
 							>
 								your health data
 							</h2>
 							<p
-								class="w-full pt-8 mb-8 text-lg font-light text-white md:pt-12 md:w-2/3"
+								class="w-full pt-8 mb-8 text-lg font-light text-textSecondary md:pt-12 font-title md:w-2/3"
 							>
 								Unlock your earning potential, break down barriers, & get
 								rewarded for living healthy.
@@ -145,13 +147,13 @@
 								href="https://youtu.be/yeYfQcewlyU"
 								target="_blank"
 								rel="noopener"
-								class="flex items-center pt-2 mb-4 border-b-2 w-max border-b-transparent hover:border-b-pink-300"
+								class="flex items-center transition-all duration-500 border border-transparent rounded-full w-max hover:border-link"
 							>
 								<span
-									class="flex items-center justify-center w-10 h-10 mr-3 border border-blue-300 rounded-full"
+									class="flex items-center justify-center w-10 h-10 mr-3 border rounded-full border-link"
 								>
 									<svg
-										class="w-6 h-6 ml-1 play-icon-text"
+										class="w-6 h-6 ml-1 text-link"
 										viewBox="0 0 24 24"
 										fill="currentColor"
 										xmlns="http://www.w3.org/2000/svg"
@@ -160,18 +162,30 @@
 									</svg>
 								</span>
 
-								<span class="text-xl play-icon-text">Watch Demo</span>
+								<span class="pr-4 text-xl text-link">Watch Demo</span>
 							</a>
-
-							<button id="waitlist-modal-button" class="pink-button">
-								Join Wait List
-							</button>
-							<a href="https://docs.carevault.health/">
-								<button class="pink-outline-button">Read the Docs</button>
-							</a>
+							<div
+								class="flex flex-col gap-3 mt-4 md:flex-row flex-nowrap md:mr-12"
+							>
+								<a
+									href="https://docs.carevault.health/"
+									class="flex-1 w-full md:w-auto md:flex-none"
+								>
+									<button class="flex-1 w-full pink-button md:flex-none">
+										Read the Docs
+									</button>
+								</a>
+								<button
+									id="waitlist-modal-button"
+									class="flex-1 md:flex-none pink-outline-button"
+								>
+									Join Wait List
+								</button>
+							</div>
 						</div>
 					</div>
 					<div
+						id="image"
 						class="flex flex-col justify-start w-full h-full pt-8 align-middle md:pt-14 md:w-5/12 md:justify-center md:align-center"
 					>
 						<img
