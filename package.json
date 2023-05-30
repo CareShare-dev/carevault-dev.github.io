@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "tailwindcss -i ./src/tailwind.css -o ./public/tailwind.css",
-		"watch": "npm-watch build",
+		"watch": "npm-watch build && ",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d public"
 	},
@@ -32,7 +32,8 @@
 		"build": {
 			"patterns": [
 				"src",
-				"tailwind.config.js"
+				"tailwind.config.js",
+				"/public/*.html, /public/**/*.html"
 			],
 			"extensions": "css,js"
 		}

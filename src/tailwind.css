@@ -1,13 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @media (max-width: 640px) {
+	#image {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding-top: 50vh;
+		z-index: -2;
+		overflow: hidden;
+		border-radius: 1.5rem;
+	}
+
+	#image::after {
+		content: "";
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.75);
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		border-radius: 1.5rem;
+	}
+} */
 .dark-gradient {
-	background-image: linear-gradient(to bottom, darkslateblue, midnightblue);
+	background-image: linear-gradient(to bottom right, #281a30 30%, #1f0f43 80%);
 	background-repeat: no-repeat;
 }
 /* nav link */
 .nav-link {
-	@apply text-gray-200 bg-transparent px-3 py-1 border border-transparent rounded-md transition-all duration-300 ease-in-out cursor-pointer;
+	@apply text-gray-200 bg-transparent px-6 py-3 border border-transparent transition-all duration-300 ease-in-out cursor-pointer;
 }
 
 .nav-link:hover {
@@ -17,10 +39,13 @@
 .nav-link:active {
 	@apply text-white bg-blue-700 border border-blue-600;
 }
+.nav-link-highlight {
+	@apply border-teal-200;
+}
 
 /* Pink button with white text */
 .pink-button {
-	@apply bg-pink-500 text-white font-semibold py-2 my-1 px-4 rounded;
+	@apply bg-pink-500 text-white text-xl py-4 my-1 px-12 rounded;
 }
 
 .pink-button:hover {
@@ -29,23 +54,20 @@
 
 /* Pink outlined button with white text */
 .pink-outline-button {
-	@apply border border-pink-400 text-pink-400 font-semibold py-2 px-4 rounded my-1;
+	@apply border border-pink-400 text-xl text-white py-4 px-12 rounded my-1;
 }
 
 .pink-outline-button:hover {
-	@apply border-pink-600 text-pink-600;
+	@apply border-pink-600 text-slate-300;
 }
 .white-outline-button {
-	@apply border border-white text-white font-semibold py-2 px-4 rounded opacity-50;
+	@apply border border-white text-xl text-white py-4 px-12 rounded opacity-50;
 }
 
 .white-outline-button:hover {
 	@apply opacity-100;
 }
 
-.play-icon-text {
-	@apply text-blue-300;
-}
 .title {
 	@apply text-5xl font-bold text-white;
 }
